@@ -2,7 +2,7 @@ import requests
 import html
 import json
 import pandas as pd
-
+import time
 
 class URLFile:
     def __init__(self, location):
@@ -134,3 +134,7 @@ if __name__ == '__main__':
                            new_caption=current_event.output_caption)
         count += 1
     main_log.to_excel()
+    print("Finished")
+    time.sleep(1)
+    print("Exiting...")
+    time.sleep(2)
